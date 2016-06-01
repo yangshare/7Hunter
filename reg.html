@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>猎赚</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<style type="text/css">
+			.mui-input-group:first-child {
+				margin-top: 20px;
+			}
+			
+			.mui-input-group {
+				background-color: #313F4D;
+			}
+			
+			.mui-input-group label {
+				color: white;
+				/*width: 22%;*/
+			}
+			
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				color: white;
+				/*width: 78%;*/
+			}
+			
+			.mui-checkbox input[type=checkbox],
+			.mui-radio input[type=radio] {
+				top: 6px;
+			}
+			
+			.mui-content-padded {
+				background-color: #313F4D;
+				margin-top: 25px;
+			}
+			
+			.mui-btn {
+				padding: 10px;
+			}
+			
+			.mui-bar {
+				background-color: #576574;
+			}
+			
+			.mui-bar h1 {
+				color: #9FA9B3;
+			}
+			
+			.mui-content {
+				background-color: #313F4D;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #313F4D;">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: #00BB9C;"></a>
+			<h1 class="mui-title">用户注册</h1>
+		</header>
+
+		<div class="mui-content">
+			<div style="margin:10px 0px 10px 0px;text-align: center;">
+				<a href="#">
+					<img src="images/touxiang.png" width="100px" />
+					<p>设置头像</p>
+				</a>
+			</div>
+			<form class="mui-input-group">
+
+				<div class="mui-input-row">
+					<label>昵称</label>
+					<input id='nickname' type="text" class="mui-input-clear mui-input" placeholder="请输入昵称" maxlength="5">
+				</div>
+				<div class="mui-input-row">
+					<label>手机号</label>
+					<input id='account' type="tel" class="mui-input-clear mui-input" placeholder="请输入手机号" maxlength="11">
+				</div>
+				<div class="mui-input-row">
+					<label style="padding: 1px 0px 1px 15px;"><button class="mui-btn-green">获取验证码</button></label>
+					<input id='valicode' type="number" class="mui-input-clear mui-input" placeholder="请输入验证码">
+
+				</div>
+				<div class="mui-input-row">
+					<label>密码</label>
+					<input id='password' type="password" class="mui-input-password" placeholder="请输入密码">
+				</div>
+
+				<div class="mui-input-row">
+					<label>学校</label>
+					<input id='school' type="text" class="mui-input-clear mui-input" placeholder="请输入学校">
+				</div>
+				<div class="mui-input-row">
+					<label>入学时间</label>
+					<input id='schoolTime' type="date" class="mui-input">
+				</div>
+			</form>
+			<div class="mui-content-padded">
+				<button id='reg' class="mui-btn mui-btn-block mui-btn-primary" style="background-color: #00BB9C;border: 0px;">注册</button>
+			</div>
+			<div class="mui-content-padded">
+				<p>亲，注册真实可用信息哟，为了您和本公司共同利益，信息绝不会泄露。</p>
+				
+			</div>
+		</div>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

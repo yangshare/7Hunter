@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>猎赚</title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.my-home-img {
+				width: 100%;
+			}
+			
+			.my-home-enter {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+				/*border: 1px red solid;*/
+				width: 25%;
+				height: 60px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function() {
+				//让图片自适应屏幕大小
+				var img = document.getElementById("myImg");
+				img.height = document.documentElement.clientHeight;
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+
+			<a href="#"><img id="myImg" class="my-home-img" src="images/home720.png"></img>
+			</a>
+			<a href="reg.html">
+				<div class="my-home-enter">
+
+				</div>
+			</a>
+		</div>
+
+		<!--引入js-->
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			mui.plusReady(function() {
+				
+				//后退键退出应用
+				var backButtonPress = 0;
+				mui.back = function(event) {
+					backButtonPress++;
+					if (backButtonPress > 1) {
+						plus.runtime.quit();
+					} else {
+						plus.nativeUI.toast('再按一次退出应用');
+					}
+					setTimeout(function() {
+						backButtonPress = 0;
+					}, 1000);
+					return false;
+				};
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,48 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "images/home.png",
+      "images/home480.png",
+      "images/home720.png",
+      "reg.html"
+    ],
+    "refer": [
+      "reg.html"
+    ]
+  },
+  "reg.html": {
+    "resources": [
+      "index.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "images/touxiang.png",
+      "reg.html"
+    ],
+    "refer": [
+      "index.html",
+      "reg.html"
+    ]
+  },
+  "login.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/touxiang.png"
+    ],
+    "refer": []
+  },
+  "getMoney.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf"
+    ]
+  }
+}
