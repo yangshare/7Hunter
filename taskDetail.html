@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>猎赚</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<style type="text/css">
+			.mui-input-row {
+				margin-top: 10px;
+			}
+			
+			.mui-input-row label,
+			.mui-input-row label~input,
+			.mui-input-row label~select {
+				color: white;
+				/*border: 1px red solid;*/
+			}
+			
+			.mui-input-row label {
+				margin-right: 10px;
+				/*overflow: hidden;*/
+				white-space: nowrap;
+				/*width: 50%;*/
+				/*border: 1px red solid;*/
+			}
+			
+			.mui-input-row span {
+				font-size: 30px;
+				color: white;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			
+			.mui-input-row label~input {
+				margin-top: 5px;
+				padding: 0px;
+				float: left;
+				background-color: white;
+				color: black;
+				width: 150px;
+				height: 30px;
+			}
+			
+			.mui-checkbox input[type=checkbox],
+			.mui-radio input[type=radio] {
+				top: 6px;
+			}
+			
+			.mui-content-padded {
+				background-color: #313F4D;
+				margin-top: 25px;
+			}
+			
+			.mui-btn {
+				padding: 10px;
+			}
+			
+			.mui-bar {
+				background-color: #576574;
+			}
+			
+			.mui-bar h1 {
+				color: #9FA9B3;
+			}
+			
+			.mui-content {
+				margin-top: 20px;
+				background-color: #313F4D;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #313F4D;">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: #00BB9C;"></a>
+			<h1 class="mui-title">任务明细</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-input-row">
+				<label>任务名称:</label>
+				<input type="text" id="outMoney" value="给我p一张图片" readonly="readonly" />
+			</div>
+			<div class="mui-input-row">
+				<label>赏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;金:&nbsp;&nbsp;&nbsp;￥</label>
+				<input type="number" id="outMoney" value="100" readonly="readonly" />
+			</div>
+			<div class="mui-input-row">
+				<label>任务说明：</label>
+			</div>
+			<div class="mui-input-row" style="margin: 10px;">
+				<textarea readonly="readonly" id="textarea" rows="5" placeholder="用户太懒，什么描述都未留下，如有疑问可以通过左下角联系发布者"></textarea>
+			</div>
+			<div class="mui-input-row">
+				<label>附加图片：</label>
+			</div>
+			<div class="mui-input-row" style="margin: 10px;">
+				<img src="images/renwu1.jpg" width="100%"/>
+				<img src="images/renwu2.jpg" width="100%"/>
+			</div>
+			<div class="mui-content-padded">
+				<button id='contact' class="mui-btn  mui-btn-primary" style="background-color: #00BB9C;border: 0px;width: 49%;">联系发布者</button>
+				<button id='getTask' class="mui-btn  mui-btn-primary" style="background-color: #00BB9C;border: 0px;width: 49%;">接受任务</button>
+			</div>
+		</div>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

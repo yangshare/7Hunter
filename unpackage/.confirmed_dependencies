@@ -6,10 +6,13 @@
       "images/home.png",
       "images/home480.png",
       "images/home720.png",
-      "reg.html"
+      "reg.html",
+      "taskList.html",
+      "images/index.jpeg"
     ],
     "refer": [
-      "reg.html"
+      "reg.html",
+      "taskList.html"
     ]
   },
   "reg.html": {
@@ -42,7 +45,118 @@
       "fonts/mui.ttf",
       "css/iconfont.css",
       "css/mui.min.css",
-      "fonts/iconfont.ttf"
+      "fonts/iconfont.ttf",
+      "taskRecord.html"
+    ],
+    "refer": [
+      "taskRecord.html"
     ]
+  },
+  "taskRecord.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/renwu1.jpg",
+      "css/iconfont.css",
+      "fonts/iconfont.ttf",
+      "images/renwu2.jpg",
+      "index.html",
+      "getMoney.html",
+      "list.html",
+      "images/home720.png",
+      "right-menu.html",
+      "taskDetail.html",
+      "images/LOGO.png"
+    ],
+    "refer": [
+      "index.html",
+      "getMoney.html",
+      "list.html",
+      "right-menu.html",
+      "taskDetail.html",
+      "taskList.html",
+      "taskPush.html"
+    ]
+  },
+  "list.html": {
+    "resources": [
+      "images/renwu1.jpg",
+      "images/renwu2.jpg",
+      "index.html",
+      "taskDetail.html",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "index.html",
+      "taskDetail.html"
+    ]
+  },
+  "right-menu.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "index.html",
+      "taskRecord.html",
+      "images/LOGO.png",
+      "taskList.html"
+    ],
+    "refer": [
+      "index.html",
+      "taskRecord.html",
+      "taskPush.html",
+      "taskList.html",
+      "login.html"
+    ]
+  },
+  "taskDetail.html": {
+    "resources": [
+      "images/renwu1.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "images/renwu2.jpg",
+      "taskRecord.html",
+      "taskList.html"
+    ],
+    "refer": [
+      "taskRecord.html",
+      "taskList.html"
+    ]
+  },
+  "taskList.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "list.html",
+      "index.html",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "images/renwu1.jpg",
+      "images/renwu2.jpg",
+      "taskDetail.html"
+    ],
+    "refer": [
+      "right-menu.html",
+      "list.html",
+      "index.html",
+      "taskDetail.html"
+    ]
+  },
+  "taskPush.html": {
+    "resources": [
+      "images/renwu1.jpg",
+      "images/renwu2.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
   }
 }

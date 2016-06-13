@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>猎赚</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+	</head>
+
+	<body style="background-color: #3A3A3A;">
+		<div class="mui-content" style="background-color: #3A3A3A;">
+
+			<!-- 菜单具体展示内容 -->
+
+			<div class="mui-input-row" style="margin: 15px;">
+				<img class="mui-pull-left" src="images/LOGO.png" width="50px">
+				<label style="color: white;font-size:24px;">猎赚</label>
+			</div>
+			<ul class="mui-table-view" style="background-color: #3A3A3A;color: gray;">
+				<li class="mui-table-view-cell">
+					<span class="iconfont icon-dating"></span> &nbsp;&nbsp;&nbsp;
+					<span class="mui-navigate-right">
+										<a style="color: gray;" href="taskList.html">任务大厅</a>
+									</span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="iconfont icon-tubiaozhuzhuangtu"></span> &nbsp;&nbsp;&nbsp;
+					<span class="mui-navigate-right">
+										<a style="color: gray;" href="taskRecord.html">任务日志</a>
+									</span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="iconfont icon-faburenwu"></span> &nbsp;&nbsp;&nbsp;
+					<span class="mui-navigate-right">
+										<a style="color: gray;" href="taskPush.html">任务发布</a>
+									</span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="iconfont icon-zaixianshengji"></span> &nbsp;&nbsp;&nbsp;
+					<span class="mui-navigate-right">
+										<a style="color: gray;" href="#">检查升级</a>
+									</span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="iconfont icon-zhuxiao01"></span> &nbsp;&nbsp;&nbsp;
+					<span class="mui-navigate-right">
+										<a style="color: gray;" href="login.html">注销登录</a>
+									</span>
+				</li>
+			</ul>
+			<div class="mui-input-row" style="margin-bottom: 1px;">
+				<label>0.0.0.1</label>
+			</div>
+
+		</div>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+			var index = null;
+			mui.plusReady(function() {
+				//获得主页面webview引用；
+				index = plus.webview.currentWebview().opener();
+			});
+			mui('.mui-content').on('tap', 'li', function() {
+				var span2 = this.children[1];
+				var id = span2.children[0].getAttribute("href");
+				var href = span2.children[0].href;
+				mui.openWindow({
+					id: id,
+					url: href,
+					
+					show: {
+						aniShow: "slide-in-right"
+					},
+					waiting: {
+						autoShow: true
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

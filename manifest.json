@@ -10,7 +10,7 @@
 	"icons": {
 		"72": "icon.png"
 	},
-	"launch_path": "getMoney.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"launch_path": "taskRecord.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
 	"developer": {
 		"name": "",/*开发者名称*/
 		"email": "",/*开发者邮箱地址*/
@@ -179,11 +179,11 @@
 					}
 				},
 				"android": {
-					"mdpi": "images/home320.png", /*普通屏启动图片，分辨率：240x282*/
-					"ldpi": "images/home320.png", /*大屏启动图片，分辨率：320x442*/
-					"hdpi": "images/home480.png", /*高分屏启动图片，分辨率：480x762*/
-					"xhdpi": "images/home720.png", /*720P高分屏启动图片，分辨率：720x1242*/
-					"xxhdpi": "images/home720.png"
+					"mdpi": "E:/images/index.png", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "E:/images/index.png", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "E:/images/index.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "E:/images/index.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "E:/images/index.png"
 				}
 			}
 		}
@@ -197,7 +197,9 @@
 					"images/home.png",
 					"images/home480.png",
 					"images/home720.png",
-					"reg.html"
+					"reg.html",
+					"taskList.html",
+					"images/index.jpeg"
 				],
 				"refer": [],
 				"priority": 0
@@ -231,7 +233,104 @@
 					"fonts/mui.ttf",
 					"css/iconfont.css",
 					"css/mui.min.css",
-					"fonts/iconfont.ttf"
+					"fonts/iconfont.ttf",
+					"taskRecord.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"taskRecord.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"images/renwu1.jpg",
+					"css/iconfont.css",
+					"fonts/iconfont.ttf",
+					"images/renwu2.jpg",
+					"index.html",
+					"getMoney.html",
+					"list.html",
+					"images/home720.png",
+					"right-menu.html",
+					"taskDetail.html",
+					"images/LOGO.png"
+				],
+				"refer": [
+					"taskList.html",
+					"taskPush.html"
+				],
+				"priority": 0
+			},
+			"list.html": {
+				"resources": [
+					"images/renwu1.jpg",
+					"images/renwu2.jpg",
+					"index.html",
+					"taskDetail.html",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"right-menu.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"fonts/iconfont.ttf",
+					"index.html",
+					"taskRecord.html",
+					"images/LOGO.png",
+					"taskList.html"
+				],
+				"refer": [
+					"taskPush.html",
+					"login.html"
+				],
+				"priority": 0
+			},
+			"taskDetail.html": {
+				"resources": [
+					"images/renwu1.jpg",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"images/renwu2.jpg",
+					"taskRecord.html",
+					"taskList.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"taskList.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"list.html",
+					"index.html",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"images/renwu1.jpg",
+					"images/renwu2.jpg",
+					"taskDetail.html"
+				],
+				"refer": [
+					"right-menu.html"
+				],
+				"priority": 0
+			},
+			"taskPush.html": {
+				"resources": [
+					"images/renwu1.jpg",
+					"images/renwu2.jpg",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"css/mui.min.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -243,5 +342,9 @@
 				"css/mui.css"
 			]
 		}
-	}
+	},
+	"unpackage":[
+	  "css/mui.css",
+	  "js/mui.js"
+	]
 }
